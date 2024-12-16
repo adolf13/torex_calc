@@ -6,525 +6,1550 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1293</width>
-    <height>812</height>
+    <width>1820</width>
+    <height>890</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QGroupBox" name="groupBox">
+   <widget class="QFrame" name="frame">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>10</y>
-      <width>280</width>
-      <height>70</height>
+      <x>0</x>
+      <y>0</y>
+      <width>1921</width>
+      <height>881</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <family>Segoe UI Black</family>
-      <pointsize>10</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
+    <property name="styleSheet">
+     <string notr="true">QFrame{
+background-color:rgb(56,58,89);
+color:rgb(220,220,220);
+border-radius:10px;
+}
+</string>
     </property>
-    <property name="title">
-     <string>Номенклатура</string>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
     </property>
-    <widget class="QComboBox" name="nomencloture_combo">
+    <widget class="QGroupBox" name="groupBox">
      <property name="geometry">
       <rect>
        <x>20</x>
-       <y>30</y>
-       <width>241</width>
-       <height>22</height>
+       <y>10</y>
+       <width>341</width>
+       <height>70</height>
       </rect>
      </property>
      <property name="font">
       <font>
-       <family>Segoe UI</family>
+       <family>Constantia</family>
+       <pointsize>11</pointsize>
        <weight>50</weight>
+       <italic>false</italic>
        <bold>false</bold>
       </font>
      </property>
+     <property name="styleSheet">
+      <string notr="true">QGroupBox  {
+	font: 11pt &quot;Constantia&quot;;
+    border: 1px solid gray;
+    border-radius: 5px;
+	color: white;
+}</string>
+     </property>
+     <property name="title">
+      <string>Серия</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <widget class="QComboBox" name="series_combo">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>321</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Constantia</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 11pt &quot;Constantia&quot;;
+color: white;
+background-color:rgb(56,58,89);</string>
+      </property>
+     </widget>
     </widget>
-   </widget>
-   <widget class="QGroupBox" name="groupBox_2">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>90</y>
-      <width>280</width>
-      <height>131</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Segoe UI Black</family>
-      <pointsize>10</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="title">
-     <string>Размеры</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <widget class="QLineEdit" name="width_inp">
+    <widget class="QGroupBox" name="groupBox_8">
      <property name="geometry">
       <rect>
        <x>20</x>
-       <y>40</y>
-       <width>113</width>
-       <height>31</height>
+       <y>100</y>
+       <width>341</width>
+       <height>70</height>
       </rect>
      </property>
      <property name="font">
       <font>
-       <family>Segoe UI</family>
-       <pointsize>12</pointsize>
+       <family>Constantia</family>
+       <pointsize>11</pointsize>
        <weight>50</weight>
+       <italic>false</italic>
        <bold>false</bold>
       </font>
      </property>
+     <property name="styleSheet">
+      <string notr="true">QGroupBox  {
+	font: 11pt &quot;Constantia&quot;;
+    border: 1px solid gray;
+    border-radius: 5px;
+	color: white;
+}</string>
+     </property>
+     <property name="title">
+      <string>Модель</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <widget class="QComboBox" name="model_combo">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>321</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Constantia</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 11pt &quot;Constantia&quot;;
+color: white;
+background-color:rgb(56,58,89);</string>
+      </property>
+      <item>
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+     </widget>
     </widget>
-    <widget class="QLabel" name="label">
+    <widget class="QGroupBox" name="groupBox_5">
      <property name="geometry">
       <rect>
-       <x>160</x>
-       <y>50</y>
-       <width>71</width>
-       <height>16</height>
+       <x>20</x>
+       <y>270</y>
+       <width>341</width>
+       <height>330</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Constantia</family>
+       <pointsize>11</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QGroupBox  {
+	font: 11pt &quot;Constantia&quot;;
+    border: 1px solid gray;
+    border-radius: 5px;
+	color: white;
+}</string>
+     </property>
+     <property name="title">
+      <string>Отделка</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <widget class="QGroupBox" name="groupBox_6">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>321</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Лицевая</string>
+      </property>
+      <widget class="QComboBox" name="out_pic">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>231</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Constantia</family>
+         <pointsize>11</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 11pt &quot;Constantia&quot;;
+color: white;
+background-color:rgb(56,58,89);</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="out_pic_lbl">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>40</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Constantia</family>
+         <pointsize>11</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"> 
+font: 11pt &quot;Constantia&quot;;
+color: white;
+</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="text">
+        <string>Рисунок</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="out_pvh">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>80</y>
+         <width>231</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Constantia</family>
+         <pointsize>11</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 11pt &quot;Constantia&quot;;
+color: white;
+background-color:rgb(56,58,89);</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="out_pvh_lbl">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>90</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Constantia</family>
+         <pointsize>11</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"> 
+font: 11pt &quot;Constantia&quot;;
+color: white;</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="text">
+        <string>Цвет</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_7">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>170</y>
+        <width>321</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Внутренняя</string>
+      </property>
+      <widget class="QComboBox" name="in_pic">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>231</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Constantia</family>
+         <pointsize>11</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 11pt &quot;Constantia&quot;;
+color: white;
+background-color:rgb(56,58,89);</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="in_pic_lbl">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>40</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Constantia</family>
+         <pointsize>11</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"> 
+font: 11pt &quot;Constantia&quot;;
+color: white;
+</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="text">
+        <string>Рисунок</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="in_pvh">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>80</y>
+         <width>231</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Constantia</family>
+         <pointsize>11</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 11pt &quot;Constantia&quot;;
+color: white;
+background-color:rgb(56,58,89);</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="in_pvh_lbl">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>90</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Constantia</family>
+         <pointsize>11</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"> 
+font: 11pt &quot;Constantia&quot;;
+color: white;</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="text">
+        <string>Цвет</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_9">
+     <property name="geometry">
+      <rect>
+       <x>610</x>
+       <y>10</y>
+       <width>411</width>
+       <height>471</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Constantia</family>
+       <pointsize>11</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QGroupBox  {
+	font: 11pt &quot;Constantia&quot;;
+    border: 1px solid gray;
+    border-radius: 5px;
+   color: white;
+}</string>
+     </property>
+     <property name="title">
+      <string>Опции</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <widget class="QCheckBox" name="option_check_1">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>390</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Constantia</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 11pt &quot;Constantia&quot;;
+color: white;
+</string>
+      </property>
+      <property name="text">
+       <string>Опция</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="option_check_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>390</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Constantia</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 11pt &quot;Constantia&quot;;
+color: white;</string>
+      </property>
+      <property name="text">
+       <string>Опция</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="option_check_3">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>390</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Constantia</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 11pt &quot;Constantia&quot;;
+color: white;</string>
+      </property>
+      <property name="text">
+       <string>Опция</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="option_check_4">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>110</y>
+        <width>390</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Constantia</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 11pt &quot;Constantia&quot;;
+color: white;</string>
+      </property>
+      <property name="text">
+       <string>Опция</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="option_check_5">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>140</y>
+        <width>390</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Constantia</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 11pt &quot;Constantia&quot;;
+color: white;
+</string>
+      </property>
+      <property name="text">
+       <string>Опция</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="option_check_6">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>170</y>
+        <width>390</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Constantia</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 11pt &quot;Constantia&quot;;
+color: white;</string>
+      </property>
+      <property name="text">
+       <string>Опция</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="option_check_7">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>200</y>
+        <width>390</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Constantia</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 11pt &quot;Constantia&quot;;
+color: white;
+</string>
+      </property>
+      <property name="text">
+       <string>Опция</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="option_check_8">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>230</y>
+        <width>390</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Constantia</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 11pt &quot;Constantia&quot;;
+color: white;
+</string>
+      </property>
+      <property name="text">
+       <string>Опция</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="option_check_9">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>260</y>
+        <width>390</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Constantia</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 11pt &quot;Constantia&quot;;
+color: white;
+</string>
+      </property>
+      <property name="text">
+       <string>Опция</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="option_check_10">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>290</y>
+        <width>390</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Constantia</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 11pt &quot;Constantia&quot;;
+color: white;</string>
+      </property>
+      <property name="text">
+       <string>Опция</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="option_check_11">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>320</y>
+        <width>390</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Constantia</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 11pt &quot;Constantia&quot;;
+color: white;
+</string>
+      </property>
+      <property name="text">
+       <string>Опция</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="option_check_12">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>350</y>
+        <width>390</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Constantia</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 11pt &quot;Constantia&quot;;
+color: white;</string>
+      </property>
+      <property name="text">
+       <string>Опция</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="option_check_13">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>380</y>
+        <width>390</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Constantia</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 11pt &quot;Constantia&quot;;
+color: white;</string>
+      </property>
+      <property name="text">
+       <string>Опция</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="option_check_14">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>410</y>
+        <width>390</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Constantia</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 11pt &quot;Constantia&quot;;
+color: white;</string>
+      </property>
+      <property name="text">
+       <string>Опция</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="option_check_15">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>440</y>
+        <width>390</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Constantia</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 11pt &quot;Constantia&quot;;
+color: white;</string>
+      </property>
+      <property name="text">
+       <string>Опция</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_10">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>190</y>
+       <width>341</width>
+       <height>70</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Constantia</family>
+       <pointsize>11</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QGroupBox  {
+	font: 11pt &quot;Constantia&quot;;
+    border: 1px solid gray;
+    border-radius: 5px;
+	color: white;
+}</string>
+     </property>
+     <property name="title">
+      <string>Вариант исполнения</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <widget class="QComboBox" name="version_combo">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>321</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Constantia</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 11pt &quot;Constantia&quot;;
+color: white;
+background-color:rgb(56,58,89);</string>
+      </property>
+      <item>
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>610</y>
+       <width>181</width>
+       <height>130</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Constantia</family>
+       <pointsize>11</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QGroupBox  {
+	font: 11pt &quot;Constantia&quot;;
+    border: 1px solid gray;
+    border-radius: 5px;
+	color: white;
+}</string>
+     </property>
+     <property name="title">
+      <string>Размеры</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <widget class="QLineEdit" name="width_inp">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Constantia</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 5px;
+font: 11pt &quot;Constantia&quot;;
+color: black;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>30</y>
+        <width>61</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"> 
+font: 11pt &quot;Constantia&quot;;
+color: white;</string>
+      </property>
+      <property name="text">
+       <string>Ширина</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="height_inp">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Constantia</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 5px;
+font: 11pt &quot;Constantia&quot;;
+color: black;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>70</y>
+        <width>61</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"> 
+font: 11pt &quot;Constantia&quot;;
+color: white;
+</string>
+      </property>
+      <property name="text">
+       <string>Высота</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_11">
+     <property name="geometry">
+      <rect>
+       <x>610</x>
+       <y>490</y>
+       <width>411</width>
+       <height>351</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Constantia</family>
+       <pointsize>14</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QGroupBox  {
+	font: 14pt &quot;Constantia&quot;;
+    border: 1px solid gray;
+    border-radius: 5px;
+   color: white;
+}</string>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <widget class="QTextEdit" name="text_info">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>391</width>
+        <height>331</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"> 
+font: 11pt &quot;Constantia&quot;;
+color: black;
+background-color: rgb(255, 255, 255);
+</string>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Constantia'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:14pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="check_but">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>570</y>
+       <width>131</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+	font: 14pt &quot;Constantia&quot;;
+    border: 1px solid gray;
+    border-radius: 5px;
+	color: white;
+</string>
      </property>
      <property name="text">
-      <string>Ширина</string>
+      <string>Проверка</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="height_inp">
+    <widget class="QPushButton" name="image_but">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>80</y>
-       <width>113</width>
-       <height>31</height>
+       <x>390</x>
+       <y>620</y>
+       <width>131</width>
+       <height>41</height>
       </rect>
      </property>
-     <property name="font">
-      <font>
-       <family>Segoe UI</family>
-       <pointsize>12</pointsize>
-       <weight>50</weight>
-       <bold>false</bold>
-      </font>
+     <property name="styleSheet">
+      <string notr="true">
+	font: 14pt &quot;Constantia&quot;;
+    border: 1px solid gray;
+    border-radius: 5px;
+	color: white;
+</string>
+     </property>
+     <property name="text">
+      <string>Эскиз</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="img_label">
+     <property name="geometry">
+      <rect>
+       <x>1050</x>
+       <y>10</y>
+       <width>751</width>
+       <height>831</height>
+      </rect>
      </property>
      <property name="text">
       <string/>
      </property>
     </widget>
-    <widget class="QLabel" name="label_2">
+    <widget class="QGroupBox" name="groupBox_3">
      <property name="geometry">
       <rect>
-       <x>160</x>
-       <y>90</y>
-       <width>71</width>
-       <height>16</height>
+       <x>210</x>
+       <y>610</y>
+       <width>151</width>
+       <height>130</height>
       </rect>
      </property>
-     <property name="text">
-      <string>Высота</string>
+     <property name="font">
+      <font>
+       <family>Constantia</family>
+       <pointsize>11</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
      </property>
+     <property name="styleSheet">
+      <string notr="true">QGroupBox  {
+	font: 11pt &quot;Constantia&quot;;
+    border: 1px solid gray;
+    border-radius: 5px;
+	color: white;
+}</string>
+     </property>
+     <property name="title">
+      <string>Сторона</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <widget class="QRadioButton" name="r_side">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>40</y>
+        <width>82</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 11pt &quot;Constantia&quot;;
+color: white;</string>
+      </property>
+      <property name="text">
+       <string>Правая</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="l_side">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>80</y>
+        <width>82</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 11pt &quot;Constantia&quot;;
+color: white;</string>
+      </property>
+      <property name="text">
+       <string>Левая</string>
+      </property>
+     </widget>
     </widget>
-   </widget>
-   <widget class="QGroupBox" name="groupBox_3">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>240</y>
-      <width>280</width>
-      <height>171</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Segoe UI Black</family>
-      <pointsize>10</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="title">
-     <string>Замковая группа</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <widget class="QComboBox" name="main_lock">
+    <widget class="QGroupBox" name="groupBox_4">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>30</y>
-       <width>121</width>
-       <height>31</height>
+       <x>370</x>
+       <y>10</y>
+       <width>231</width>
+       <height>130</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <family>Constantia</family>
+       <pointsize>11</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QGroupBox  {
+	font: 11pt &quot;Constantia&quot;;
+    border: 1px solid gray;
+    border-radius: 5px;
+	color: white;
+}</string>
+     </property>
+     <property name="title">
+      <string>Глазок</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <widget class="QComboBox" name="peep">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>191</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Constantia</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 11pt &quot;Constantia&quot;;
+color: white;
+background-color:rgb(56,58,89);</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="peep_offset">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>191</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 11pt &quot;Constantia&quot;;
+color: white;
+</string>
+      </property>
+      <property name="text">
+       <string>Глазок в замковой зоне</string>
+      </property>
+     </widget>
     </widget>
-    <widget class="QLabel" name="label_4">
+    <widget class="QGroupBox" name="groupBox_12">
      <property name="geometry">
       <rect>
-       <x>150</x>
-       <y>40</y>
-       <width>111</width>
-       <height>16</height>
+       <x>370</x>
+       <y>150</y>
+       <width>231</width>
+       <height>91</height>
       </rect>
      </property>
-     <property name="text">
+     <property name="font">
+      <font>
+       <family>Constantia</family>
+       <pointsize>11</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QGroupBox  {
+	font: 11pt &quot;Constantia&quot;;
+    border: 1px solid gray;
+    border-radius: 5px;
+	color: white;
+}</string>
+     </property>
+     <property name="title">
       <string>Основной замок</string>
      </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <widget class="QComboBox" name="main_lock">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>40</y>
+        <width>191</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Constantia</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 11pt &quot;Constantia&quot;;
+color: white;
+background-color:rgb(56,58,89);</string>
+      </property>
+     </widget>
     </widget>
-    <widget class="QLabel" name="adv_lock">
+    <widget class="QGroupBox" name="groupBox_13">
      <property name="geometry">
       <rect>
-       <x>150</x>
-       <y>80</y>
-       <width>111</width>
-       <height>16</height>
+       <x>370</x>
+       <y>250</y>
+       <width>231</width>
+       <height>91</height>
       </rect>
      </property>
-     <property name="text">
+     <property name="font">
+      <font>
+       <family>Constantia</family>
+       <pointsize>11</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QGroupBox  {
+	font: 11pt &quot;Constantia&quot;;
+    border: 1px solid gray;
+    border-radius: 5px;
+	color: white;
+}</string>
+     </property>
+     <property name="title">
       <string>Доп. замок</string>
      </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <widget class="QComboBox" name="adv_lock">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>40</y>
+        <width>191</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Constantia</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 11pt &quot;Constantia&quot;;
+color: white;
+background-color:rgb(56,58,89);</string>
+      </property>
+     </widget>
     </widget>
-    <widget class="QComboBox" name="comboBox_3">
+    <widget class="QGroupBox" name="groupBox_14">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>70</y>
-       <width>121</width>
-       <height>31</height>
+       <x>370</x>
+       <y>350</y>
+       <width>231</width>
+       <height>91</height>
       </rect>
      </property>
-    </widget>
-    <widget class="QLabel" name="latch">
-     <property name="geometry">
-      <rect>
-       <x>150</x>
-       <y>120</y>
-       <width>111</width>
-       <height>16</height>
-      </rect>
+     <property name="font">
+      <font>
+       <family>Constantia</family>
+       <pointsize>11</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
      </property>
-     <property name="text">
+     <property name="styleSheet">
+      <string notr="true">QGroupBox  {
+	font: 11pt &quot;Constantia&quot;;
+    border: 1px solid gray;
+    border-radius: 5px;
+	color: white;
+}</string>
+     </property>
+     <property name="title">
       <string>Задвижка</string>
      </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <widget class="QComboBox" name="latch">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>40</y>
+        <width>191</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Constantia</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 11pt &quot;Constantia&quot;;
+color: white;
+background-color:rgb(56,58,89);</string>
+      </property>
+     </widget>
     </widget>
-    <widget class="QComboBox" name="comboBox_4">
+    <widget class="QGroupBox" name="groupBox_15">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>110</y>
-       <width>121</width>
-       <height>31</height>
+       <x>370</x>
+       <y>450</y>
+       <width>231</width>
+       <height>91</height>
       </rect>
      </property>
-    </widget>
-   </widget>
-   <widget class="QGroupBox" name="groupBox_4">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>430</y>
-      <width>280</width>
-      <height>111</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Segoe UI Black</family>
-      <pointsize>10</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="title">
-     <string>Глазок</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <widget class="QComboBox" name="peep">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>30</y>
-       <width>121</width>
-       <height>31</height>
-      </rect>
+     <property name="font">
+      <font>
+       <family>Constantia</family>
+       <pointsize>11</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
      </property>
-    </widget>
-    <widget class="QLabel" name="latch_2">
-     <property name="geometry">
-      <rect>
-       <x>150</x>
-       <y>40</y>
-       <width>111</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Тип глазка</string>
-     </property>
-    </widget>
-    <widget class="QCheckBox" name="peep_offset">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>80</y>
-       <width>181</width>
-       <height>17</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Глазок сбоку</string>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QGroupBox" name="groupBox_5">
-    <property name="geometry">
-     <rect>
-      <x>300</x>
-      <y>10</y>
-      <width>311</width>
-      <height>381</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Segoe UI Black</family>
-      <pointsize>10</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="title">
-     <string>Отделка</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <widget class="QGroupBox" name="groupBox_6">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>30</y>
-       <width>271</width>
-       <height>161</height>
-      </rect>
+     <property name="styleSheet">
+      <string notr="true">QGroupBox  {
+	font: 11pt &quot;Constantia&quot;;
+    border: 1px solid gray;
+    border-radius: 5px;
+	color: white;
+}</string>
      </property>
      <property name="title">
-      <string>Лицевая</string>
+      <string>Фурнитура</string>
      </property>
-     <widget class="QLabel" name="latch_3">
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <widget class="QComboBox" name="furniture">
       <property name="geometry">
        <rect>
-        <x>150</x>
+        <x>20</x>
         <y>40</y>
-        <width>111</width>
-        <height>16</height>
+        <width>191</width>
+        <height>31</height>
        </rect>
       </property>
       <property name="font">
        <font>
-        <family>Segoe UI Black</family>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>Constantia</family>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
-      <property name="text">
-       <string>Материал</string>
-      </property>
-     </widget>
-     <widget class="QComboBox" name="out_material">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>30</y>
-        <width>121</width>
-        <height>31</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QComboBox" name="out_coating">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>70</y>
-        <width>121</width>
-        <height>31</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QLabel" name="latch_4">
-      <property name="geometry">
-       <rect>
-        <x>150</x>
-        <y>80</y>
-        <width>111</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>Segoe UI Black</family>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="text">
-       <string>Покрытие</string>
-      </property>
-     </widget>
-     <widget class="QComboBox" name="out_color">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>110</y>
-        <width>121</width>
-        <height>31</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QLabel" name="latch_5">
-      <property name="geometry">
-       <rect>
-        <x>150</x>
-        <y>120</y>
-        <width>111</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>Segoe UI Black</family>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="text">
-       <string>Цвет</string>
+      <property name="styleSheet">
+       <string notr="true">font: 11pt &quot;Constantia&quot;;
+color: white;
+background-color:rgb(56,58,89);</string>
       </property>
      </widget>
     </widget>
-    <widget class="QGroupBox" name="groupBox_7">
+    <widget class="QPushButton" name="pdf">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>200</y>
-       <width>271</width>
-       <height>161</height>
+       <x>390</x>
+       <y>670</y>
+       <width>131</width>
+       <height>41</height>
       </rect>
      </property>
-     <property name="title">
-      <string>Внутренняя</string>
+     <property name="styleSheet">
+      <string notr="true">
+	font: 14pt &quot;Constantia&quot;;
+    border: 1px solid gray;
+    border-radius: 5px;
+	color: white;
+</string>
      </property>
-     <widget class="QLabel" name="latch_6">
-      <property name="geometry">
-       <rect>
-        <x>150</x>
-        <y>40</y>
-        <width>111</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>Segoe UI Black</family>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="text">
-       <string>Материал</string>
-      </property>
-     </widget>
-     <widget class="QComboBox" name="in_material">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>30</y>
-        <width>121</width>
-        <height>31</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QComboBox" name="in_coating">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>70</y>
-        <width>121</width>
-        <height>31</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QLabel" name="latch_7">
-      <property name="geometry">
-       <rect>
-        <x>150</x>
-        <y>80</y>
-        <width>111</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>Segoe UI Black</family>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="text">
-       <string>Покрытие</string>
-      </property>
-     </widget>
-     <widget class="QComboBox" name="in_color">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>110</y>
-        <width>121</width>
-        <height>31</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QLabel" name="latch_8">
-      <property name="geometry">
-       <rect>
-        <x>150</x>
-        <y>120</y>
-        <width>111</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>Segoe UI Black</family>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="text">
-       <string>Цвет</string>
-      </property>
-     </widget>
+     <property name="text">
+      <string>PDF</string>
+     </property>
     </widget>
    </widget>
   </widget>
